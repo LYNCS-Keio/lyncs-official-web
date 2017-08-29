@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LYNCS excercise of programming 第4回</title>
+  </head>
+  <body>
+    <h1 id="4-">その4 ループ</h1>
+    <p>処理を繰り返し行うようにします．<br />
+    処理内容を工夫すれば，繰り返しの中で色々な処理ができます．</p>
+    <h2>必要な知識</h2>
+    <ul>
+      <li>ループを記述する方法
+        <ul>
+          <li><code>while</code> や <code>for</code> など色々あります．言語によって様々です．</li>
+        </ul></li>
+    </ul>
+    <h2>全体的なヒント</h2>
+    <ul>
+      <li>ループ内の処理で条件分岐すれば処理にバリエーションが生まれます．</li>
+      <li>何回目のカウントかを数える変数（カウンタ変数）があると便利です．
+        <ul>
+          <li>C言語などの <code>for</code> 文では <code>i</code> や <code>j</code> でよくでてくるアレです</li>
+          <li>rubyでは <code>with_index</code> で取れて便利です</li>
+        </ul></li>
+    </ul>
+    <h2 id="1">問題1</h2>
+    <p>Hello World!を5回表示させてください．<br />
+    printなどを5回コピーすれば当然可能ですが，for, whileなどを利用して，print等は1回の使用にとどめてみてください．</p>
+    <h3 id="ruby">rubyでの実行例</h3>
+    <pre><code>$ ruby ex1.rb
+Hello World!
+Hello World!
+Hello World!
+Hello World!
+Hello World!
+$</code></pre>
+    <h2 id="2">問題2</h2>
+    <p>FizzBuzzと呼ばれるプログラムを実装してみましょう．</p>
+    <p>1から順番に数を表示します．ただし</p>
+    <ul>
+      <li>3で割り切れるなら数字ではなく，&quot;Fizz&quot;</li>
+      <li>5で割り切れるなら数字ではなく，&quot;Buzz&quot;</li>
+      <li>両方で割り切れるなら数字ではなく，&quot;FizzBuzz&quot;</li>
+    </ul>
+    <p>と表示してください．</p>
+    <h3 id="ruby20">rubyでの実行例（上限を20とした場合）</h3>
+    <pre><code>$ ruby ex2.rb
+1 2 Fizz 4 Buzz Fizz 7 8 Fizz Buzz 11 Fizz 13 14 FizzBuzz 16 17 Fizz 19 Buzz
+$</code></pre>
+  </body>
+</html>

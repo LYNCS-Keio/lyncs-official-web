@@ -1,0 +1,81 @@
+body {
+	font-family: 'Raleway', 'Avenir Next', arial, helvetica, Verdana, Geneva, sans-serif;
+	background-color: #111;
+	margin: 0px;
+	overflow-x: hidden;
+}
+
+.main_container {
+position: relative;
+margin: 0px;
+color: #999;
+}
+
+.header{
+	position: relative;
+	width: 100%;
+	padding: 10px;
+	float:left;
+	margin: 0px;
+}
+
+.table_container{
+	position: relative;
+	width: 50%;
+	padding-left: 10px;
+	float:left;
+	margin: 0px;
+}
+
+#table_scroll{
+	overflow: auto;
+	margin: 0px;
+	padding: 0px;
+}
+
+.description{
+	margin-bottom: 10px;
+}
+
+.graph_container{
+	position: relative;
+	padding-right: 10px;
+	padding-left: 10px;
+	width: calc(100% - (50% + 30px));
+	float:right;
+	margin: 0px;
+}
+
+#mapimg{
+	width:100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+.mapimg{
+	width:100%;
+	margin: 0px;
+	margin-bottom: 20px;
+	padding: 0px;
+}
+
+.legend{
+	border:solid 1px #999;
+	padding: 2px;
+	width:250px;
+}
+
+
+table , td, th {
+	border: 1px solid #333;
+	border-collapse: collapse;
+	margin: 5px;
+}
+td, th {
+	padding: 3px;
+	width: 30px;
+	height: 25px;
+}
+td{
+	font-family: 'Roboto', sans-serif;
+}

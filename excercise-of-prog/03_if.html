@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LYNCS excercise of programming 第3回</title>
+  </head>
+  <body>
+    <h1 id="3-">その3 条件分岐</h1>
+    <p>特定の条件が満たされたときだけ処理を実行するようにします．</p>
+    <h2>必要な知識</h2>
+    <ul>
+      <li>条件分岐する方法
+        <ul>
+          <li>だいたい <code>if</code></li>
+        </ul></li>
+        <li>条件を書く方法
+          <ul>
+            <li><code>==</code> や <code>!=</code> ，<code>&gt;</code> などがとりあえず分かってればいい</li>
+          </ul></li>
+          <li>orやandを表す方法
+            <ul>
+              <li>だいたい <code>|</code> と <code>&amp;</code></li>
+            </ul></li>
+            <li>複数の条件を書く方法
+              <ul>
+                <li>言語によって <code>else if</code> や <code>elsif</code> などいろいろあってキレそうになる</li>
+              </ul></li>
+              <li>条件が満たされなかったときの処理を書く方法
+                <ul>
+                  <li>だいたい<code>else</code></li>
+                </ul></li>
+    </ul>
+    <h2>あったほうが幸せな知識</h2>
+    <ul>
+      <li>bool(boolean)型についての知識
+        <ul>
+          <li>bool型の値は <code>if</code> の条件に使えます
+            <ul>
+              <li>メソッドの返り値をそのまま条件に使える</li>
+            </ul></li>
+        </ul></li>
+    </ul>
+    <h2 id="1">問題1</h2>
+    <p>整数を1つ読み込み，偶数か奇数かを表示するプログラムを作成しましょう．</p>
+    <h3 id="ruby">rubyでの実行例</h3>
+    <pre><code>$ ruby ex1.rb
+Input an integer: 1
+1 is an odd number.
+$ ruby ex1.rb
+Input an integer: 2
+2 is an even number.
+$</code></pre>
+    <h2 id="2">問題2</h2>
+    <p>整数を1つ読み込み，2および3で割り切れるかを表示するプログラムを作成しましょう．</p>
+    <h3>ヒント</h3>
+    <p>以下の4つの状態が考えられるので，それぞれについて別の出力を出せるように条件分岐を書いていきましょう．<br />
+    順番に注意です．</p>
+    <ul>
+      <li>2だけで割り切れる</li>
+      <li>3だけで割り切れる</li>
+      <li>2でも3でも割り切れる</li>
+      <li>2でも3でも割り切れない</li>
+    </ul>
+    <h3 id="ruby-1">rubyでの実行例</h3>
+    <pre><code>$ ruby ex2.rb
+Input an integer: 14
+14 can be divided by 2, but cannot be divided by 3.
+$ ruby ex2.rb
+Input an integer: 30
+30 can be divided by both 2 and 3.
+$ ruby ex2.rb
+Input an integer: 19
+19 cannot be divided by either 2 or 3.
+$ ruby ex2.rb
+Input an integer: 15
+15 cannot be divided by 2, but can be divided by 3.
+$</code></pre>
+    <h2 id="3">問題3</h2>
+    <p>西暦で年を入力し，閏年か否かを判定するプログラムを作成しましょう．</p>
+    <h3 id="-1">ヒント</h3>
+    <p>4で割れれば閏年，但し100で割れれば平年，但し400で割れれば閏年，ですね．<br />
+    読みやすい書き方，短い書き方，いろいろな書き方があると思います．いろいろ考えてみるのもいいと思います．</p>
+    <pre><code>Input year: 2013
+2013 is a common year.
+
+Input year: 2012
+2012 is a leap year.
+
+Input year: 2000
+2000 is a common year.</code></pre>
+  </body>
+</html>

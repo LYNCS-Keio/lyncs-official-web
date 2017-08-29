@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>無題ドキュメント</title>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['学部名', '割合'],
+          ['法学部',1],
+          ['商学部',1],
+          ['理工学部',17],
+          ['総合政策学部',1]
+        ]);
+        var options = {
+          title: '所属学部',
+        };
+       var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+        chart.draw(data, options);
+      }
+</script>
+</head>
+
+<body>
+
+<div id="piechart" style="width: 400px; height: 300px;"></div>
+</body>
+</html>
