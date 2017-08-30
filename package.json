@@ -1,0 +1,26 @@
+{
+  "name": "lyncs-official-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "test": "npm run textlint",
+    "textlint": "find ./ -name '*.html' | xargs textlint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kn1cht/lyncs-official-web.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kn1cht/lyncs-official-web/issues"
+  },
+  "homepage": "http://lyncs-keio.net/",
+  "devDependencies": {
+    "textlint": "^8.2.1",
+    "textlint-plugin-html": "^0.1.5",
+    "textlint-rule-preset-japanese": "^1.3.4",
+    "textlint-rule-preset-jtf-style": "^2.2.5"
+  }
+}

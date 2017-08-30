@@ -9,3 +9,7 @@ wordpress
 ytp
 gpa
 testfield
+
+# node.js
+node_modules
+package-lock.json

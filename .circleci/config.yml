@@ -1,0 +1,24 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/node:latest
+    working_directory: ~/lyncs-official-web
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - v1-dependencies-{{ checksum "package.json" }}
+
+      - run: npm install
+
+      - save_cache:
+          key: v1-dependencies-{{ checksum "package.json" }}
+          paths:
+            - node_modules
+
+      # run tests!
+      - run: npm test
+
+
+

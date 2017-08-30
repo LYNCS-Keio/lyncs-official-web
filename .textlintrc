@@ -1,0 +1,9 @@
+{
+  "plugins": ["html"],
+  "rules": {
+    "preset-japanese": {
+      "spellcheck-tech-word" : false
+    },
+    "preset-jtf-style": true
+  }
+}
