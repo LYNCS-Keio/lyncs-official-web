@@ -7,22 +7,27 @@ jobs:
     steps:
       - checkout
       - restore_cache:
-          keys:
-            - v1-dependencies-{{ checksum "package.json" }}
+        keys:
+          - v1-dependencies-{{ checksum "package.json" }}
 
       - run: npm install
 
       - save_cache:
-          key: v1-dependencies-{{ checksum "package.json" }}
-          paths:
-            - node_modules
+        key: v1-dependencies-{{ checksum "package.json" }}
+        paths:
+          - node_modules
 
       # run tests!
       - run: npm test
+
+      - add_ssh_keys:
+        fingerprints:
+          - "f2:63:cd:84:83:74:e8:03:4b:cd:26:c2:0a:6f:25:e9"
+
       - deploy:
-        name: Deploy to production env
+        name: Deploy to server if tests pass and branch is Master
         command: |
           if [ "${CIRCLE_BRANCH}" == "master" ]; then
-          ssh lyncs-keio@lyncs-keio.sakura.ne.jp "cd /home/lyncs-keio/www; git checkout master; git pull origin master"
+            ssh lyncs-keio@lyncs-keio.sakura.ne.jp "cd /home/lyncs-keio/www; git checkout master; git pull origin master"
           fi
 
