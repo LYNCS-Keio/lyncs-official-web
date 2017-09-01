@@ -7,60 +7,60 @@
 <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700" rel="stylesheet">
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script type="text/javascript">
-	window.onunload = function () {}
+  window.onunload = function () {}
 
 $(window).load(function() {
-	//アニメーション前初期位置設定
-	$('.menu').css('left', '-300px');
-	
-	//アニメーション
-	$('.menu').animate({
+  //アニメーション前初期位置設定
+  $('.menu').css('left', '-300px');
+
+  //アニメーション
+  $('.menu').animate({
     'left': '0px'
-	}, 400);
-	
-	//メニュー各要素隠す
-	$('.menu ul').hide();
-	$('.menu ul li').hide();
-	$('#logo').hide();	
-	
-	//ロゴ表示
-	$('#logo').fadeIn(700);
-	
-	//ロゴ表示開始から500ms経過後にメニュー各要素を表示
-	setTimeout(function(){
-				$('.menu ul').fadeIn(10);
+  }, 400);
+
+  //メニュー各要素隠す
+  $('.menu ul').hide();
+  $('.menu ul li').hide();
+  $('#logo').hide();
+
+  //ロゴ表示
+  $('#logo').fadeIn(700);
+
+  //ロゴ表示開始から500ms経過後にメニュー各要素を表示
+  setTimeout(function(){
+        $('.menu ul').fadeIn(10);
         $('.menu ul li').each(function(i) {
-					$(this).delay(120 * i).fadeIn(200);
-				});
+          $(this).delay(120 * i).fadeIn(200);
+        });
     },500);
- 	
+
 });
 </script>
 </head>
 
 <body>
-	<div class="menu">
-		<!--ロゴ部分：h1に書き直す-->
-		<div id="logo"><h1 id="logo_h1">LYNCS<br>Visual Design<br>Department</h1></div>
-		<!--MENU ul/li-->
-		<ul class="nav">
-			<a href="index.html" class="nav_link"><li class="nav_item"id="nav_active">Home</li></a>
-			<a href="about.html" class="nav_link"><li class="nav_item">About us</li></a>
-			<a href="members.html" class="nav_link"><li class="nav_item">Members</li></a>
-			<a href="works.html" class="nav_link"><li class="nav_item">Works</li></a>
-			<a href="download.html" class="nav_link"><li class="nav_item">Download</li></a>
-			<a href="contact.html" class="nav_link"><li class="nav_item">Contact</li></a>
-			<a href="http://www.lyncs-keio.net/" class="nav_link"><li class="nav_item">LYNCS Home</li></a>
-		</ul>
-	</div>
-	
-	
-	<div class="index_logo_container">
-		<!--<span id="index_logo_span">宇宙 × デザイン</span>-->
-		<img src="http://www.lyncs-keio.net/img/lyncs_logo.svg" class="index_logo">
-	</div>
-	
-	
+  <div class="menu">
+    <!--ロゴ部分：h1に書き直す-->
+    <div id="logo"><h1 id="logo_h1">LYNCS<br>Visual Design<br>Department</h1></div>
+    <!--MENU ul/li-->
+    <ul class="nav">
+      <a href="index.html" class="nav_link"><li class="nav_item"id="nav_active">Home</li></a>
+      <a href="about.html" class="nav_link"><li class="nav_item">About us</li></a>
+      <a href="members.html" class="nav_link"><li class="nav_item">Members</li></a>
+      <a href="works.html" class="nav_link"><li class="nav_item">Works</li></a>
+      <a href="download.html" class="nav_link"><li class="nav_item">Download</li></a>
+      <a href="contact.html" class="nav_link"><li class="nav_item">Contact</li></a>
+      <a href="http://www.lyncs-keio.net/" class="nav_link"><li class="nav_item">LYNCS Home</li></a>
+    </ul>
+  </div>
+
+
+  <div class="index_logo_container">
+    <!--<span id="index_logo_span">宇宙 × デザイン</span>-->
+    <img src="http://www.lyncs-keio.net/img/lyncs_logo.svg" class="index_logo">
+  </div>
+
+
 
 </body>
 </html>

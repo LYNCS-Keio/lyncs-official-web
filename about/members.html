@@ -37,47 +37,47 @@
           ['商学部',1],
           ['理工学部',17],
           ['総合政策学部',1],
-					['提携先',2]
+          ['提携先',2]
         ]);
-		  
-		  	var data_grade = google.visualization.arrayToDataTable([
+
+        var data_grade = google.visualization.arrayToDataTable([
           ['学年', '割合'],
           ['1年',10],
           ['2年',4],
           ['3年',3],
           ['4年',1],
-		  		['修士1年',1]
+          ['修士1年',1]
         ]);
-				
-				var data_gender = google.visualization.arrayToDataTable([
+
+        var data_gender = google.visualization.arrayToDataTable([
           ['性別', '割合'],
           ['男性',9+4+1+1],
           ['女性',1+2+1]
-				]);
-		  
+        ]);
+
         var options_faculty = {
           title: '所属学部',
         };
-		  
-		  	var options_grade = {
+
+        var options_grade = {
           title: '学年',
         };
-				
-				var options_gender = {
+
+        var options_gender = {
           title: '性別',
         };
-				
-				
-       	var chart_faculty = new google.visualization.PieChart(document.getElementById('piechart_faculty'));
-				var chart_grade = new google.visualization.PieChart(document.getElementById('piechart_grade'));
-				var chart_gender = new google.visualization.PieChart(document.getElementById('piechart_gender'));
+
+
+         var chart_faculty = new google.visualization.PieChart(document.getElementById('piechart_faculty'));
+        var chart_grade = new google.visualization.PieChart(document.getElementById('piechart_grade'));
+        var chart_gender = new google.visualization.PieChart(document.getElementById('piechart_gender'));
         chart_faculty.draw(data_faculty, options_faculty);
-				chart_grade.draw(data_grade, options_grade);
-				chart_gender.draw(data_gender, options_gender);
+        chart_grade.draw(data_grade, options_grade);
+        chart_gender.draw(data_gender, options_gender);
       }
-</script> 
+</script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-  
+
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -87,14 +87,14 @@
   ga('create', 'UA-89438867-1', 'auto');
   ga('send', 'pageview');
 
-	</script>
+  </script>
 </head>
 
 
 <body>
   <div class="flex-column" id="container">
     <div class="flex header hamburger">
-			<a href="../"><img src="../img/lyncs_logo.svg" alt="慶應義塾大学公認団体 宇宙科学総合研究会" id="logo"></a>
+      <a href="../"><img src="../img/lyncs_logo.svg" alt="慶應義塾大学公認団体 宇宙科学総合研究会" id="logo"></a>
       <div class="hamburger_button">MENU <span class="fa fa-bars" aria-hidden="true"></span></div>
       <nav>
         <ul class="side">
@@ -102,7 +102,7 @@
           <li><a href="../about">LYNCSについて</a></li>
           <li><a href="../sat">衛星ミッション本部</a></li>
           <li><a href="../astro">天文研究本部</a></li>
-					<!--
+          <!--
           <li><a href="../event">イベント情報</a></li>
           <li><a href="../design">Visual Design Department</a></li>
           <li><a href="../blog">Blog</a></li>
@@ -111,7 +111,7 @@
         </ul>
       </nav>
     </div>
-		<!--
+    <!--
     <div class="flex-column contents" id="bg_image">
       <div class="flex contents" id="dept_logo" style="align-items: flex-end">
         <div class="catch catch2">
@@ -120,18 +120,18 @@
         </div>
       </div>
     </div>
-			-->
-			
-		<div class="content_main">
-      <div class="catch">LYNCS メンバー情報</div>	
-    </div>
-    	
+      -->
+
     <div class="content_main">
-     
+      <div class="catch">LYNCSメンバー情報</div>
+    </div>
+
+    <div class="content_main">
+
       <div class="content_element">
         <p class="text">
         <h2 class="content_element_title">所属学部</h2>
-		  	<p>会員は理工学部が多いですが、法学部や商学部、さらには総合政策学部（SFC)の学生も参加しています。 </p>
+        <p>会員は理工学部が多いですが、法学部や商学部、さらには総合政策学部（SFC)の学生も参加しています。 </p>
         <div id="piechart_faculty" style="width: 80%; height: 200px;"></div>
       </div>
 
@@ -140,7 +140,7 @@
         <p class="text">男性が多めですが、徐々に女性も増えています。</p>
          <div id="piechart_gender" style="width: 80%; height: 200px;"></div>
       </div>
-      
+
       <div class="content_element">
         <h2 class="content_element_title">学年</h2>
         <p class="text">2016年度は1年生の入部が多く、このような人数比になりました。各学年にメンバーが居ますので、新入生ではない方もぜひ！</p>
@@ -152,12 +152,12 @@
         <p class="text">天文,工学,両属のいずれか</p>
        <div id="piechart_faculty" style="width: 80%; height: 200px;"></div>
       </div>
-      
+
       <div class="content_element">
         <h2 class="content_element_title">各メンバーの紹介</h2>
         <p>順次追加</p>
-		  -->
-        	
+      -->
+
       </div>
     </div>
   </div>
