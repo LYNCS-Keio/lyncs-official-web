@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /.git/
+Disallow: /*/.git/
+Disallow: /.circleci/
+Disallow: /archive/
+Disallow: /excercise-of-prog/
