@@ -5,7 +5,7 @@
   "main": "",
   "scripts": {
     "test": "npm run textlint",
-    "textlint": "find . -type d -name node_modules -prune -o -type f -name '*.html' -print | xargs textlint"
+    "textlint": "find . -type d -name archive -o -name node_modules -prune -type f -name '*.html' -print | xargs textlint"
   },
   "repository": {
     "type": "git",
