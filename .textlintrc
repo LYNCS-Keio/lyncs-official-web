@@ -1,6 +1,15 @@
 {
   "plugins": ["html"],
   "rules": {
+    "ja-hiragana-fukushi": true,
+    "ja-hiragana-hojodoushi": true,
+    "ja-no-abusage": true,
+    "ja-no-redundant-expression": true,
+    "no-mixed-zenkaku-and-hankaku-alphabet": true,
+    "preset-ja-spacing": {
+      "ja-no-space-between-full-width": false,
+      "ja-space-between-half-and-full-width": false
+    },
     "preset-japanese": {
       "no-doubled-joshi": { "allow": [ "たり" ] },
       "sentence-length": { "max": 150 },
@@ -9,7 +18,7 @@
     "preset-jtf-style": {
       "2.2.2.算用数字と漢数字の使い分け": false,
       "3.1.1.全角文字と半角文字の間": false,
-      "3.1.2.全角文字どうし": false, 
+      "3.1.2.全角文字どうし": false,
       "4.3.1.丸かっこ（）": false
     }
   }
