@@ -2,16 +2,16 @@
 /* CSS Document */
 /* コンテンツ用ページ */
 html{
-	height:100%;
+  height:100%;
 }
 body {
-	color: #111111;
-	font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W6', Meiryo, メイリオ, 'MS PGothic', arial, helvetica, sans-serif;
-	height:100%;
+  color: #111111;
+  font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W6', Meiryo, メイリオ, 'MS PGothic', arial, helvetica, sans-serif;
+  height:100%;
 }
 
 a {
-	color: #000000;
+  color: #000000;
 }
 /*
 a:link { color: #FFFFFF; }
@@ -21,210 +21,202 @@ a:active { color: #FFFFFF; }
 */
 
 .header {
-	background-color: #333333;
+  background-color: #333333;
 }
 
 
 #logo {
-	/*flex-basis: 200px;*/
-	height:60px;
-	margin-left:10px;
-	margin-top:3px;
-	margin-bottom:3px;
+  /*flex-basis: 200px;*/
+  height:60px;
+  margin-bottom:3px;
+  margin-left:10px;
+  margin-top:3px;
 }
 
 #bg_image{
-	/*background-image:url("img/img.jpg");*/
-	background-repeat: no-repeat;
-	background-position: 50% 50%;
-	background-size: cover;
-	margin: 0px;
-	width:100%;
-	height: 320px; /*320pxで固定（IE/Firefox/Safariでの調整で320pxに固定）*/
+  /*background-image:url("img/img.jpg");*/
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 320px; /*320pxで固定（IE/Firefox/Safariでの調整で320pxに固定）*/
+  margin: 0;
   max-height: 320px;
+  width:100%;
 }
 
 #dept_logo{
-	flex-basis:300px;
-	padding: 2vh;
-    align-items: center;
+  align-items: center;
+  flex-basis:300px;
 }
 
 .dept_logo_img{
-	/* height: 85%; */
-	margin:30px;
-	margin-bottom:10px;
-	margin-top:10px;
-    max-width: 300px;
-    max-height: 210px;
+  /* height: 85%; */
+  margin:30px;
+  margin-bottom:10px;
+  margin-top:10px;
+  max-height: 210px;
+  max-width: 300px;
 }
 
 .content_main {
-	display: flex;
-	flex-wrap:wrap;
-    justify-content: flex-start;
-    margin-left: 5vw;
-    flex: 1 0 auto;
+  display: flex;
+  flex: 1 0 auto;
+  flex-wrap:wrap;
+  justify-content: flex-start;
+  margin-left: 5vw;
 }
 
 /* スマホ用 */
 .content_element {
-	width: 90vw;
-	/*margin: auto;*/
-	margin-top: 20px;
-    margin-right: 6vw;
+  /*margin: auto;*/
+  margin-right: 6vw;
+  margin-top: 20px;
+  width: 90vw;
 }
 .content_element_full {
-	width: 90vw;
-    /*
-	margin: auto;
-    */
-	margin-top: 20px;
+  /*margin: auto;*/
+  margin-top: 20px;
+  width: 90vw;
 }
 
 /* PC用  750px~*/
 @media screen and ( min-width:750px ){
-.content_element {
-	width: 40vw;
-	/*margin: auto;*/
-	margin-top: 20px;
+  .content_element {
+    /*margin: auto;*/
     margin-right: 6vw;
-}
+    margin-top: 20px;
+    width: 40vw;
+  }
 
-.content_element_full {
-	width: 90vw;
-           /*
-	margin: auto;
-    */
-	margin-top: 20px;
-}
+  .content_element_full {
+    /*margin: auto;*/
+    margin-top: 20px;
+    width: 90vw;
+  }
 }
 
 .content_element_title {
-	border-left:5px #666666 solid;
-	padding-left:4px;
+  border-left:5px #666666 solid;
+  padding-left:4px;
 }
 
 .catch {
-	font-size: 180%;
-	font-weight:600;
-	margin-top:20px;
-	margin-bottom:20px;
-	padding: 10px;
-	text-align: center;
-	font-family: "a-otf-midashi-go-mb31-pr6n",'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W6', Meiryo, メイリオ, 'MS PGothic', arial, helvetica, sans-serif;
+  font-family: "a-otf-midashi-go-mb31-pr6n",'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W6', Meiryo, メイリオ, 'MS PGothic', arial, helvetica, sans-serif;
+  font-size: 180%;
+  font-weight:600;
+  margin-bottom:20px;
+  margin-top:20px;
+  padding: 10px;
+  text-align: center;
 }
 
 /*about, eventページ用設定*/
 .catch2 {
-    margin-bottom: 0px;
-    color: white;
+  color: white;
+  margin-bottom: 0;
 }
 
 /*要調整か*/
 .question {
-	font-weight:bold;
+  font-weight:bold;
 }
 .answer {
-	/*font-family: "a-otf-midashi-go-mb31-pr6n",'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W6', Meiryo, メイリオ, 'MS PGothic', arial, helvetica, sans-serif;*/
+  /*font-family: "a-otf-midashi-go-mb31-pr6n",'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W6', Meiryo, メイリオ, 'MS PGothic', arial, helvetica, sans-serif;*/
 }
 
 #lyncs_tan {
-    position: absolute;
-    bottom: 0vh;
-    right: 0vh;
-    z-index: -1;
+  bottom: 0;
+  position: absolute;
+  right: 0;
+  z-index: -1;
 }
 
 #lyncs_tan img {
-    height: 8vh;
+  height: 8vh;
 }
 
 /* ハンバーガーメニュー用 */
 .hamburger {
-	color: white;
+  color: white;
 }
 
 .hamburger_button {
-	/*ボタンを枠で囲うとクリック率が上がるらしいですよ*/
-	border: solid 1px #ffffff;
-	border-radius: 3px;
-	width: 100%;
-	margin-left: auto;
+  /*ボタンを枠で囲うとクリック率が上がるらしいですよ*/
+  border: solid 1px #ffffff;
+  border-radius: 3px;
+  margin-left: auto;
+  width: 100%;
 }
 
 .hamburger nav {
-	margin-left: auto;
+  margin-left: auto;
 }
 
 .hamburger a {
-	color: white;
+  color: white;
 }
 
 @media screen and (min-width: 769px) {
-/*大きい画面の場合はボタンを表示せずに，
-リンクを横並びに表示*/
-.hamburger_button {
-	display: none;
-}
+  /*大きい画面の場合はボタンを表示せずに，
+  リンクを横並びに表示*/
+  .hamburger_button {
+    display: none;
+  }
 
-.hamburger nav {
-	display: block;
-}
+  .hamburger nav {
+    display: block;
+  }
 
-.hamburger ul {
-  /*li要素を横並びに表示する方法は色々ありますが，
-  flexboxを使うのがいい感じだと僕は思います*/
-	flex-direction: row;
-}
-.hamburger li {
-	padding: 0 5px;
-}
+  .hamburger ul {
+    /*li要素を横並びに表示する方法は色々ありますが，
+    flexboxを使うのがいい感じだと僕は思います*/
+    flex-direction: row;
+  }
+  .hamburger li {
+    padding: 0 5px;
+  }
 }
 
 @media screen and (max-width: 768px) {
-/*画面が小さい場合はボタンを表示し，
-ボタンクリックでボタンの下にリストを表示させる
-リストの位置の指定はjsで行っています*/
-body {
-	margin-top: 3px;
-	margin-left: 1px;
-	margin-right: 1px;
-}
+  /*画面が小さい場合はボタンを表示し，
+  ボタンクリックでボタンの下にリストを表示させる
+  リストの位置の指定はjsで行っています*/
+  body {
+    margin-left: 1px;
+    margin-right: 1px;
+    margin-top: 3px;
+  }
 
-.hamburger_button {
-	text-align: right;
-	width: auto;
-	padding: 1px 5px;
-}
+  .hamburger_button {
+    padding: 1px 5px;
+    text-align: right;
+    width: auto;
+  }
 
-.hamburger nav {
-	display: none;
-	padding: 0 0;
-	width: 100%;
-}
+  .hamburger nav {
+    display: none;
+    padding: 0 0;
+    width: 100%;
+  }
 
-.hamburger ul {
-	flex-direction: column;
-	padding-left: 0;
-	margin: 0;
-}
+  .hamburger ul {
+    flex-direction: column;
+    margin: 0;
+    padding-left: 0;
+  }
 
-.hamburger li {
-	background: rgba(255, 255, 255, 0.8);
-	padding-top: 10px;
-	padding-left: 3px;
-	padding-right: 10px;
-	padding-bottom: 10px;
-	text-align: right;
-}
+  .hamburger li {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px 10px 10px 3px;
+    text-align: right;
+  }
 
-.hamburger li:hover {
-	background-color: rgba(255, 255, 255, 0.6);
-}
+  .hamburger li:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+  }
 
-.hamburger li a {
-color: #000000;
-text-decoration: none;
-}
+  .hamburger li a {
+    color: #000000;
+    text-decoration: none;
+  }
 }
