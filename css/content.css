@@ -264,7 +264,7 @@ a:active { color: #FFFFFF; }
 table.border-table {
   width: 100%;
   border: solid 2px #666;
-  background: linear-gradient(to left, transparent, white 15px) 0 0/50px 100%, linear-gradient(to right, transparent, white 15px) right/50px 100%;
+  background: linear-gradient(to left, transparent 15px, white 15px) 0 0/50px 100%, linear-gradient(to right, transparent 15px, white 15px) right/50px 100%;
   background-repeat: no-repeat;
   background-attachment: local;
   text-align: center;
