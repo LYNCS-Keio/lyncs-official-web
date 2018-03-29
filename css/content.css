@@ -301,3 +301,8 @@ table.border-table td.satday {
 table.border-table td.sunday {
   background: lightpink;
 }
+
+.piechart {
+  height: 250px;
+  width: 80%;
+}
