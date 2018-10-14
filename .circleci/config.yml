@@ -28,6 +28,6 @@ jobs:
           name: Deploy to server if tests pass and branch is Master
           command: |
             if [ "${CIRCLE_BRANCH}" == "master" ]; then
-              ssh -o StrictHostKeyChecking=no lyncs-keio@lyncs-keio.sakura.ne.jp "cd /home/lyncs-keio/www; git checkout master; git pull origin master"
+              ssh -o StrictHostKeyChecking=no -p 22222 lyncs_web_deploy@lyncs-keio.net "cd /var/www/lyncs-keio.net; git checkout master; git pull origin master"
             fi
 
