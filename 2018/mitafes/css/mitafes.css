@@ -106,6 +106,16 @@ h3 {
   display:none;
 }
 
+.article-img-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.article-img-wrapper img {
+  margin: 10px 5px;
+}
 
 @media screen and (max-width: 768px) {
   .flex-container {
