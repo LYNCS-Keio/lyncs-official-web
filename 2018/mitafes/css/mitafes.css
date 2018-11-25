@@ -89,6 +89,10 @@ h3 {
   height: 100vh;
 }
 
+.scroll {
+  -webkit-overflow-scrolling: touch;
+}
+
 .right .content {
   width: 80%;
   margin-bottom: 100px;
