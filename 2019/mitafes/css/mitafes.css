@@ -1,0 +1,143 @@
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic Medium");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic Medium");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic Medium");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic Medium");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic Bold");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: local("Helvetica Neue Regular");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: local("Helvetica Neue Regular");
+  font-weight: 200;
+}
+
+/* IE10以上 */
+@media all and (-ms-high-contrast: none) {
+  body {
+    font-family: Verdana, Meiryo, sans-serif;
+  }
+}
+
+
+body {
+  background-image: url("img/background-mita.jpg");
+  background-color: #F9F9F9;
+  background-repeat: no-repeat;            /* 背景を繰り返さない */
+  background-position: 0% 50%;            /* 背景画像の位置は画面中央 */
+  background-attachment:fixed;             /* 背景画像を固定する */
+  background-size: auto 100%;
+  color: #191919;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  margin-right: 0px;
+  position: fixed;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+}
+
+h2 {
+  font-size: 2em;
+  color: #00A3AF;
+  margin-bottom: 0;
+}
+h3 {
+  font-size: 1.5em;
+  color: #00A3AF;
+  margin-bottom: 0;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+
+.left {
+  flex: 1 1 0%;
+}
+.left img {
+  width: 50%;
+}
+
+.right {
+  margin-left: auto;
+  background: rgba(249, 249, 249, 0.7);
+  flex: 1 1 0%;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.scroll {
+  -webkit-overflow-scrolling: touch;
+}
+
+.right .content {
+  width: 80%;
+  margin-bottom: 100px;
+}
+.right .content p {
+  margin-top: 0;
+}
+
+.content{
+  padding:10px;
+}
+
+#logo{
+  width:100%;
+  display:none;
+}
+
+.article-img-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.article-img-wrapper img {
+  margin: 10px 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .flex-container {
+    flex-direction: column;
+  }
+  
+  .right {
+    margin-left: auto;
+    background: rgba(249, 249, 249, 1);
+    overflow-y: scroll;
+    flex: 1 1 auto;
+    height: 100vh;
+  }
+  .right .content {
+    width: 95%;
+  }
+
+  #logo{
+    display:block;
+  }
+}
